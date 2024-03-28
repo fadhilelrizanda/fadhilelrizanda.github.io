@@ -1,0 +1,331 @@
+.prime_color {
+    background-color: #124076;
+}
+
+.nav_prime {
+    background-color: #124076;
+}
+
+
+.nav_prime a{
+    color: white;
+}
+
+.profile-photo
+{
+    margin-top: 60px;
+}
+
+.desc-profile
+{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.box-view{
+    border: 5px solid  black;
+}
+
+.name p {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 0; /* Add this line to remove top margin */
+    margin-bottom: 10px; /* Adjust bottom margin as needed */
+}
+
+.desc-profile p
+{
+    color: white;
+    font-size: 24px;
+}
+
+.desc p
+{
+    color: white;
+  text-align: center;
+  font-size: 22px;
+}
+
+.circular--portrait { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    width: 250px; 
+    height: 250px; 
+    overflow: hidden; 
+    border-radius: 50%; 
+    margin: 0 auto; 
+} 
+
+.circular--portrait img { 
+    width: 100%; 
+    height: auto;
+    margin-top: 70px;
+    
+}
+
+.hero {
+    position: relative;
+    height: 600px;
+    overflow: hidden; /* Ensure the blur effect is contained within the hero element */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./bg-hero1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px); /* Apply blur effect to the background image */
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75); /* Adjust the alpha value to control darkness */
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+.desc-content
+{
+    color: black;
+}
+
+.desc-content h3
+{
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.desc-content h4{
+    font-size: 20px;
+}
+
+.desc-content p
+{
+    color: black;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.skills
+{
+margin-top: 25px;
+background-color: rgb(7,9,17);
+color: white;
+padding-bottom: 175px;
+}
+
+.skills h3
+{
+margin-bottom: 50px;
+font-size: 28px;
+text-align: center;
+}
+
+.card i
+{
+    text-align: center;
+    font-size: 100px;
+}
+
+.project
+{
+    padding: 50px 0px;
+}
+
+.project h3{
+    text-align: center;
+    padding: 35px 0px;
+}
+
+.img-desc img
+{
+    height: 100px;
+}
+
+.img-desc-prof img
+{
+    width: 300px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline {
+    position: relative;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .main-timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: #939597;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .timeline {
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .timeline::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: #939597;
+    border: 5px solid #f5df4d;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    padding: 0px 40px 20px 0px;
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    padding: 0px 0px 20px 40px;
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -12px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .main-timeline::after {
+      left: 31px;
+    }
+  
+    /* Full-width containers */
+    .timeline {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+    /* Make sure that all arrows are pointing leftwards */
+    .timeline::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+      left: 18px;
+    }
+  
+    .left::before {
+      right: auto;
+    }
+  
+    /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  }
+
+.tm-img img
+{
+    width: 200px;
+}
+
+.timeline h3
+{
+    font-size: 20px;
+}
+
+.experience
+{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(7,9,17);
+    color: white;
+}
+
+.timeline li
+{
+    text-align: start;
+}
+
+.experience section
+{
+    background-color: rgb(7,9,17) !important;
+}
+
+.contact h3
+{
+  padding: 50px;
+  text-align: center;
+}
+
+.contact .col i{
+  font-size: 75px;
+  text-align: center;
+}
+
+.contact .col p
+{
+text-align: center;
+}
+
+.videos video
+{
+  text-align: center;
+  margin: auto;
+}

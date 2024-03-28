@@ -3,44 +3,557 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sample HTML Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <title>Portofolio Website</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to My Website</h1>
-    </header>
+    <nav class="navbar navbar-expand-lg sticky-top nav_prime">
+      <div class="container-fluid">
+          <a class="navbar-brand nav_font" href="#">Fadhil Elrizanda</a>
+          <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+          >
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#project">Project</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#experience">Experience</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+    <div class="container-fluid">
+      <div class="hero row justify-content-center">
+        <div class="profile-photo">
+          <div class="row justify-content-center">
+            <div class="col-3">
+              <div class="circular--portrait">
+                <img
+                  src="./profile-img.JPG"
+                  alt="Fadhil Elrizanda"
+                  class="img-fluid img_circle"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="name">
+              <p>Fadhil Elrizanda</p>
+              <div class="desc-profile">
+                <p>
+                  Machine Learning Enthusiast / Computer Vision
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="desc row">
+        <div
+          class="col-5 img-desc-prof d-flex justify-content-center align-items-center"
+        >
+          <img
+            src="./images/lab-foto-modified.png"
+            alt="Fadhil Elrizanda"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-7 desc-content" id="about">
+          <h3>Fadhil Elrizanda</h3>
+          <h4>
+            Fresh Graduate Electrical Engineering | Andalas University |
+            Indonesian
+          </h4>
+          <p>
+            I am a fresh graduate from electrical engineering at Andalas
+            University, Indonesian. My interests include artificial
+            intelligence, machine learning, computer vision, web development and
+            IoT development.
+          </p>
+          <h4>Achievement</h4>
+          <ul>
+            <li>
+              Achieved University and Faculty level Outstanding Student Award
+              during the VI (Dec 2023) graduation ceremony
+            </li>
+            <li>
+              Win 2nd place in GEMASTIK KEMENDIKBUD XV Smart Devices 2022
+              competition
+            </li>
+            <li>
+              Secured the 2nd place in GEMASTIK KEMENDIKBUD XV Smart Devices
+              2022 competition
+            </li>
+            <li>
+              Participated in the Sakura Exchange Program sponsored by the Japan
+              Science and Technology Agency at Kitakyushu University, Japan in
+              2023
+            </li>
+            <li>
+              Finalist in the National Student Scientific Week (PIMNAS) 35th edition under the PKM-KC category in 2022
+            </li>
+          </ul>
+          <div class="row img-desc">
+            <div class="col">
+              <img
+                src="./images/Logo_Unand.svg"
+                class="img-fluid"
+                alt="Responsive image"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="./images/gemastik.png"
+                style="width: 240px"
+                alt="Responsive image"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="./images/pimnas.png"
+                class="img-fluid"
+                alt="Responsive image"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="./images/sakura.png"
+                alt="Responsive image"
+                style="width: 240px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row skills box-view" id="skills">
+        <h3 class="mt-5">My skills</h3>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <i class="bi bi-eye-fill"></i>
+              <div class="card-body">
+                <h5 class="card-title">Computer Vision</h5>
+                <p class="card-text">
+                  Computer vision is one of my areas of greatest interest.
+                   I have a lot of knowledge including CNN, object detection, object tracking, and pose estimation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <i class="bi bi-bar-chart-fill"></i>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Machine Learning, Artificial intelligence
+                </h5>
+                <p class="card-text">
+                 
+I possess a robust understanding of machine learning and artificial intelligence, having successfully implemented various algorithms including K-Nearest Neighbors (KNN), Decision Trees, Support Vector Machines (SVM), ensemble technique, and many others. 
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <i class="bi bi-file-code-fill"></i>
+              <div class="card-body">
+                <h5 class="card-title">Python, Tensorflow, Pytorch</h5>
+                <p class="card-text">
+                  As a machine learning Enthusiast, I have solid experience using and practicing using python, tensorflow, and pytorch to develop my project and gain optimizing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-4">
+            <div class="card">
+              <i class="bi bi-cpu"></i>
+              <div class="card-body">
+                <h5 class="card-title">Electronics, Eagle, Arduino, C++</h5>
+                <p class="card-text">
+                As bachelor engineering at electrical engineering, I possess skill in electronic and 
+                developing electronic devices such as building PCB, programming embedded systems, and IoT
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <i class="bi bi-braces"></i>
+              <div class="card-body">
+                <h5 class="card-title">Web Development</h5>
+                <p class="card-text">
+                  Web development skill that I have including building API, Website, and integration. 
+                  Web development also used to deploy online app in machine learning or computer vision <Applet></Applet>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <i class="bi bi-database-fill"></i>
+              <div class="card-body">
+                <h5 class="card-title">Database</h5>
+                <p class="card-text">
+                  Database that I often implemented such as mySQL and monggodb. Database use to store devices 
+                  data or storing parameter to visualize in website or for data for building machine learning
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+      <div class="row project " id="project">
+        <h3>Personal Project</h3>
 
-    <section>
-      <h2>About Us</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec
-        neque quis justo semper varius nec vel ligula. Quisque sodales purus ac
-        justo sagittis, id hendrerit felis venenatis. Duis sollicitudin, est non
-        pharetra ullamcorper, sapien felis feugiat ipsum, a mattis elit nunc sit
-        amet nibh.
-      </p>
-    </section>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <img src="./images/project1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Vehicle Control System Based On Computer Vision And Iot As A
+                  Security Solution In Sharp Turns
+                </h5>
+                <p class="card-text">
+                  This project used to prevent accident in sharp turn. Especially in Indonesian which has many sharp bend due to geographic condition
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal1"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="modal1"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Vehicle Control System
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="videos d-flex justify-content-center align-items-center">
+                          <div>
+                              <h3>Video Demo</h3>
+                              <video width="800" controls autoplay>
+                                  <source src="./videos/vid1.mp4" type="video/mp4">
+                                  Your browser does not support HTML video.
+                              </video>
+                          </div>
+                      </div>
+                      
+                      
+                      </div>
+             
+                      <h3>Step Included :</h3>
+                      <p>
+                        <ul>
+                          <li>
+                            1. Collecting Dataset of heavy and small vehicle
+                          </li>
+                          <li>
+                            2. Developing model YOLOV4 to perform classification
+                          </li>
+                          <li>
+                            3. Training model YOLOV8
+                          </li>
+                          <li>
+                            4. Deploy model to Jetson Nano
+                          </li>
+                          <li>
+                            5. Analysis performance of the system
+                          </li>
+                          <li>
+                            6. Evaluate the system  
+                          </li>
+                        </ul>
+                        
+                    
+                   
+                       
+                        </p>
+                    </div>
 
-    <section>
-      <h2>Our Services</h2>
-      <ul>
-        <li>Web Development</li>
-        <li>Data Analysis</li>
-        <li>Graphic Design</li>
-      </ul>
-    </section>
+                    </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
 
-    <footer>
-      <p>&copy; 2024 My Website. All rights reserved.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="./images/project2.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  ​​Detecting healthy, sick and dead chickens in broiler coops
+                  based on computer vision and IoT to prevent the spread of
+                  disease and death in broiler chickens
+                </h5>
+                <p class="card-text">
+                  This project designed to monitor and collect data of number chicken death, sick, and health in broiler chicken farm.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal2"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="modal2"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Chicken Monitoring System
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="videos d-flex justify-content-center align-items-center">
+                          <div>
+                              <h3>Video Demo</h3>
+                              <video width="800" controls autoplay muted>
+                                  <source src="./videos/vid2.mp4" type="video/mp4">
+                                  Your browser does not support HTML video.
+                              </video>
+                          </div>
+                      </div>
+                      
+                      
+                      </div>
+             
+                      <h3>Step Included :</h3>
+                      <p>
+                        <ul>
+                          <li>
+                            1. Collecting Dataset of healthy, sick and death chicken
+                          </li>
+                          <li>
+                            2. Developing model YOLOV4 to perform classification
+                          </li>
+                          <li>
+                            3. Training model YOLOV4
+                          </li>
+                          <li>
+                            4. Deploy model to raspberry pi and AWS Cloud
+                          </li>
+                          <li>
+                            5. Analysis performance of the system
+                          </li>
+                          <li>
+                            6. Evaluate the system  
+                          </li>
+                        </ul>
+                     
+
+
+
+                   
+                       
+                        </p>
+                    </div>
+
+                    </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- experience -->
+      <div class="row experience box-view" id="experience">
+        <h3>Experience</h3>
+        <section style="background-color: #f0f2f5">
+          <div class="container py-5">
+            <div class="main-timeline">
+              <div class="timeline left">
+                <div class="card">
+                  <div class="card-body p-4 tm-img">
+                    <img src="./images/datasintesa.png" class="img-fluid" />
+                    <h3>Data Scientist Internship</h3>
+                    <p class="mb-0">
+                        <ul>
+                          <li>
+                            Designing and building a workout repetition system using Blazepose and Openpose.
+                          </li>
+                          <li>
+                            The workout repetitions calculated include sit-ups, pull-ups, and push-ups.
+                          </li>
+                          <li>
+                            Data collection is conducted by gathering information from the internet, resulting in a total of 367 images.
+                          </li>
+                          <li>
+                            A model is obtained that accurately calculates repetitions based on benchmark movements. However, there are
+                            unique cases that lead to inaccurate calculations
+                          </li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline right">
+                <div class="card">
+                  <div class="card-body p-4 tm-img">
+                    <img
+                      src="./images/Logo_Semen_Padang.svg"
+                      class="img-fluid"
+                      style="width: 150px"
+                    />
+                    <h3>
+                      Electrical and instrumentation maintenance internship
+                    </h3>
+                    <p class="mb-0">
+                      <ul>
+                        <li>Gathering information and data regarding issues in the cement manufacturing process. </li>
+                        <li>Designing and creating an artificial neural network model to predict the smoothness value of cement. </li>
+                        <li>Evaluating the obtained model together with staff from PT Semen Padang and mentors from Andalas University. </li>
+                        <li>Obtained mean absolute error (MAE) and mean squared error (MSE) of 0.89 and 0.75, respectively, on the test
+                          data. </li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="row contact" id="contact">
+        <h3>Contact Me</h3>
+        <div class="row">
+            <div class="col d-flex flex-column align-items-center">
+                <a href="https://www.linkedin.com/in/fadhil-elrizanda/">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <p>Fadhil Elrizanda</p>
+            </div>
+            <div class="col d-flex flex-column align-items-center">
+              <a href="mailto:fadhilelrizanda@gmail.com">
+                  <i class="bi bi-envelope"></i>
+
+                </a>
+                <p>fadhilelrizanda@gmail.com</p>
+            </div>
+            <div class="col d-flex flex-column align-items-center">
+              <a href="github.com/fadhilelrizanda">
+
+                <i class="bi bi-github"></i>
+              </a>
+                <p>fadhilelrizanda</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer class="row mt-5 footer" >
+      <div class="col d-flex flex-column align-items-end">
+        <p>&copy; 2024 Fadhil Elrizanda. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
