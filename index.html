@@ -3,6 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fadhil Elrizanda - AI Researcher & Engineer specializing in Computer Vision, Deep Learning, and Multimodal 3D Object Detection." />
+    <meta name="keywords" content="Fadhil Elrizanda, AI Researcher, Computer Vision Engineer, Machine Learning, Deep Learning, 3D Object Detection, ITB, Andalas University" />
+    <meta name="author" content="Fadhil Elrizanda" />
+    <link rel="canonical" href="https://fadhilelrizanda.github.io/" />
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Fadhil Elrizanda | AI Researcher & Engineer" />
+    <meta property="og:description" content="Portfolio of Fadhil Elrizanda, specializing in Computer Vision, Deep Learning, and Multimodal 3D Object Detection." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fadhilelrizanda.github.io/" />
+    <meta property="og:image" content="https://fadhilelrizanda.github.io/profile-img.JPG" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,747 +37,305 @@
     />
     <link rel="stylesheet" href="./style.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/favicon_io/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <title>Portofolio Website</title>
+    
+    <title>Fadhil Elrizanda | AI Researcher & Engineer</title>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Fadhil Elrizanda",
+      "jobTitle": "AI Researcher & Engineer",
+      "url": "https://fadhilelrizanda.github.io/",
+      "sameAs": [
+        "https://www.linkedin.com/in/fadhil-elrizanda",
+        "https://github.com/fadhilelrizanda"
+      ],
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Institut Teknologi Bandung"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Andalas University"
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top nav_prime">
-      <div class="container-fluid">
-        <a class="navbar-brand nav_font" href="#">Fadhil Elrizanda</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#project">Project</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg sticky-top nav_prime glass-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand nav_font gradient-text fw-bold" href="#">Fadhil Elrizanda</a>
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+              <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-    <div class="container-fluid">
-      <div class="hero row justify-content-center">
-        <div class="profile-photo">
-          <div class="row justify-content-center">
-            <div class="col-3">
-              <div class="circular--portrait">
-                <img
-                  src="./profile-img.JPG"
-                  alt="Fadhil Elrizanda"
-                  class="img-fluid img_circle"
-                />
+    <main class="container-fluid p-0">
+      <section class="hero d-flex align-items-center justify-content-center flex-column text-center">
+        <div class="hero-content">
+          <div class="circular--portrait mb-4 mx-auto glow-effect">
+            <img src="./profile-img.JPG" alt="Fadhil Elrizanda - Profile Picture" class="img-fluid" />
+          </div>
+          <h1 class="display-4 fw-bolder text-white">Fadhil Elrizanda</h1>
+          <p class="lead gradient-text fw-semibold typing-effect">AI Researcher & Computer Vision Engineer</p>
+          <div class="mt-4">
+             <a href="#about" class="btn btn-primary rounded-pill px-4 py-2 me-2 custom-btn">Discover My Work</a>
+             <a href="#contact" class="btn btn-outline-light rounded-pill px-4 py-2 custom-btn-outline">Get In Touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section py-5" id="about">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5 mb-4 mb-lg-0 text-center">
+              <img src="./images/lab-foto-modified.png" alt="Fadhil in the Lab" class="img-fluid floating-img rounded-4 shadow-lg" />
+            </div>
+            <div class="col-lg-7">
+              <h2 class="section-title mb-4">About Me</h2>
+              <h4 class="text-primary mb-3">M.Eng in Artificial Intelligence | ITB (Expected 2026)</h4>
+              <p class="about-text">
+                I am an AI researcher and engineer specializing in Computer Vision and Deep Learning. My expertise lies in CNNs, Transformers, and multimodal fusion for real-world perception systems. I am currently pursuing my Master's at Institut Teknologi Bandung (ITB), focusing on Knowledge Distillation for 3D Object Detection using LiDAR and camera data.
+              </p>
+              
+              <h4 class="mt-4 mb-3 text-white">Key Achievements</h4>
+              <ul class="achievement-list">
+                <li><i class="bi bi-trophy-fill text-warning"></i> <strong>Gold Medal & Special Award</strong> - International IoT IYSA 2023</li>
+                <li><i class="bi bi-award-fill text-secondary"></i> <strong>Silver Medal</strong> - Global Competition for Life Science IYSA 2023</li>
+                <li><i class="bi bi-award-fill text-secondary"></i> <strong>Silver Medal</strong> - GEMASTIK Division IX Smart Device 2023</li>
+                <li><i class="bi bi-globe-americas text-info"></i> <strong>Sakura Science Exchange Program</strong> - JST Japan 2023</li>
+                <li><i class="bi bi-star-fill text-warning"></i> <strong>Outstanding Graduate</strong> - Andalas University 2023</li>
+              </ul>
+              
+              <div class="row mt-4 align-items-center logo-row">
+                 <div class="col-3 text-center"><img src="./images/Logo_Unand.svg" class="img-fluid org-logo" alt="Andalas University" /></div>
+                 <div class="col-3 text-center"><img src="./stei-itb-2.png" class="img-fluid org-logo" alt="ITB" onerror="this.src='./images/azure-ai.PNG'" /></div>
+                 <div class="col-3 text-center"><img src="./images/gemastik.png" class="img-fluid org-logo" alt="Gemastik" /></div>
+                 <div class="col-3 text-center"><img src="./images/sakura.png" class="img-fluid org-logo" alt="Sakura Science" /></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <div class="name">
-              <p>Fadhil Elrizanda</p>
-              <div class="desc-profile">
-                <p>Machine Learning Enthusiast / Computer Vision</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="desc row">
-        <div
-          class="col-5 img-desc-prof d-flex justify-content-center align-items-center"
-        >
-          <img
-            src="./images/lab-foto-modified.png"
-            alt="Fadhil Elrizanda"
-            class="img-fluid"
-          />
-        </div>
-        <div class="col-7 desc-content" id="about">
-          <h3>Fadhil Elrizanda</h3>
-          <h4>
-            Bachelor Degree Electrical Engineering | Andalas University |
-            Indonesian
-          </h4>
-          <p>
-            I have a bachelor degree in Electrical Engineering from Andalas
-            University, Indonesia. My academic background has equipped me with a
-            solid foundation in engineering principles, and I am passionate
-            about applying this knowledge to emerging technologies.
-          </p>
-          <h4>Achievement</h4>
-          <ul>
-            <li>
-              Achieved University and Faculty level Outstanding Student Award
-              during the VI (Dec 2023) graduation ceremony
-            </li>
-            <li>
-              Win 2nd place in GEMASTIK KEMENDIKBUD XV Smart Devices 2022
-              competition
-            </li>
-            <li>
-              Secured the 2nd place in GEMASTIK KEMENDIKBUD XV Smart Devices
-              2022 competition
-            </li>
-            <li>
-              Participated in the Sakura Exchange Program sponsored by the Japan
-              Science and Technology Agency at Kitakyushu University, Japan in
-              2023
-            </li>
-            <li>
-              Finalist in the National Student Scientific Week (PIMNAS) 35th
-              edition under the PKM-KC category in 2022
-            </li>
-          </ul>
-          <div class="row img-desc">
-            <div class="col">
-              <img
-                src="./images/Logo_Unand.svg"
-                class="img-fluid"
-                alt="Responsive image"
-              />
-            </div>
-            <div class="col">
-              <img
-                src="./images/gemastik.png"
-                style="width: 240px"
-                alt="Responsive image"
-              />
-            </div>
-            <div class="col">
-              <img
-                src="./images/pimnas.png"
-                class="img-fluid"
-                alt="Responsive image"
-              />
-            </div>
-            <div class="col">
-              <img
-                src="./images/sakura.png"
-                alt="Responsive image"
-                style="width: 240px"
-              />
-            </div>
-          </div>
-          <div class="row mt-5">
-            <h4>Certification</h4>
+      </section>
+
+      <section class="skills-section py-5" id="skills">
+        <div class="container">
+          <h2 class="section-title text-center mb-5">Technical Expertise</h2>
+          <div class="row g-4">
             <div class="col-md-4">
-              <div class="card">
-                <img
-                  src="./images/azure-ai.PNG"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Microsoft Certified: Azure AI Engineer Associate
-                  </h5>
-                </div>
+              <div class="skill-card glass-card text-center p-4 h-100">
+                <i class="bi bi-eye skill-icon gradient-text"></i>
+                <h4 class="mt-3">Computer Vision</h4>
+                <p>Expertise in Object Detection, Multimodal Fusion (LiDAR+Camera), and Knowledge Distillation. Building real-time perception systems.</p>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card">
-                <img src="./images/msib.PNG" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">MSIB AI Mastery Orbit Academy</h5>
-                </div>
+              <div class="skill-card glass-card text-center p-4 h-100">
+                <i class="bi bi-cpu skill-icon gradient-text"></i>
+                <h4 class="mt-3">Deep Learning</h4>
+                <p>Strong foundation in CNNs, Transformers, and optimization. Proficient with PyTorch, TensorFlow, TensorRT, and ONNX.</p>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card">
-                <img
-                  src="./images/improving.PNG"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Deep Learning AI Improving Deep Neural Networks:
-                    Hyperparameter Tuning, Regularization and Optimization
-                  </h5>
-                </div>
+              <div class="skill-card glass-card text-center p-4 h-100">
+                <i class="bi bi-braces skill-icon gradient-text"></i>
+                <h4 class="mt-3">Software Engineering</h4>
+                <p>Python, C++, Docker, Git, Weights & Biases. End-to-end ML pipeline design and deployment on edge devices.</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row skills box-view" id="skills">
-        <h3 class="mt-5">My skills</h3>
-        <div class="row">
-          <div class="col">
-            <div class="card">
-              <i class="bi bi-eye-fill"></i>
-              <div class="card-body">
-                <h5 class="card-title">Computer Vision</h5>
-                <p class="card-text">
-                  Computer vision is one of my areas of greatest interest. I
-                  have a lot of knowledge including CNN, object detection,
-                  object tracking, and pose estimation.
-                </p>
+      </section>
+
+      <section class="experience-section py-5" id="experience">
+        <div class="container">
+          <h2 class="section-title text-center mb-5">Professional Experience</h2>
+          
+          <div class="timeline-container">
+            <div class="timeline-item glass-card p-4 mb-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4 class="m-0 text-primary">Computer Vision Engineer (Freelancer)</h4>
+                <span class="badge bg-primary rounded-pill">Jan 2026 - Present</span>
               </div>
+              <p class="text-muted mb-3">Independent</p>
+              <ul>
+                <li>Building a fish counting system based on density estimation and regression-based deep learning models.</li>
+                <li>Designing end-to-end pipelines from image acquisition to density map inference for aquaculture applications.</li>
+              </ul>
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <i class="bi bi-bar-chart-fill"></i>
-              <div class="card-body">
-                <h5 class="card-title">
-                  Machine Learning, Artificial intelligence
-                </h5>
-                <p class="card-text">
-                  I possess a robust understanding of machine learning and
-                  artificial intelligence, having successfully implemented
-                  various algorithms including K-Nearest Neighbors (KNN),
-                  Decision Trees, Support Vector Machines (SVM), ensemble
-                  technique, and many others.
-                </p>
+
+            <div class="timeline-item glass-card p-4 mb-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4 class="m-0 text-primary">Computer Vision Engineer</h4>
+                <span class="badge bg-primary rounded-pill">Dec 2025 - Present</span>
               </div>
+              <p class="text-muted mb-3">Autonoma (Part Time)</p>
+              <ul>
+                <li>Designing and building algorithms for Object Detection on Autonomous Vehicles.</li>
+                <li>Developing perception pipelines integrating camera and sensor data for real-time vehicle understanding.</li>
+              </ul>
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <i class="bi bi-file-code-fill"></i>
-              <div class="card-body">
-                <h5 class="card-title">Python, Tensorflow, Pytorch</h5>
-                <p class="card-text">
-                  As a machine learning Enthusiast, I have solid experience
-                  using and practicing using python, tensorflow, and pytorch to
-                  develop my project and gain optimizing.
-                </p>
+
+            <div class="timeline-item glass-card p-4 mb-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4 class="m-0 text-primary">Capstone Project Advisor (AI/ML)</h4>
+                <span class="badge bg-secondary rounded-pill">Oct 2025 - Dec 2025</span>
               </div>
+              <p class="text-muted mb-3">Dicoding Asah</p>
+              <ul>
+                <li>Guided teams on ML system design: problem framing, dataset curation, modeling, and deployment best practices.</li>
+              </ul>
             </div>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-4">
-            <div class="card">
-              <i class="bi bi-cpu"></i>
-              <div class="card-body">
-                <h5 class="card-title">Electronics, Eagle, Arduino, C++</h5>
-                <p class="card-text">
-                  As bachelor engineering at electrical engineering, I possess
-                  skill in electronic and developing electronic devices such as
-                  building PCB, programming embedded systems, and IoT
-                </p>
+
+            <div class="timeline-item glass-card p-4 mb-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h4 class="m-0 text-primary">ML Instructor & Project Advisor</h4>
+                <span class="badge bg-secondary rounded-pill">Dec 2024 - Aug 2025</span>
               </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card">
-              <i class="bi bi-braces"></i>
-              <div class="card-body">
-                <h5 class="card-title">Web Development</h5>
-                <p class="card-text">
-                  Web development skill that I have including building API,
-                  Website, and integration. Web development also used to deploy
-                  online app in machine learning or computer vision
-                  <applet></applet>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card">
-              <i class="bi bi-database-fill"></i>
-              <div class="card-body">
-                <h5 class="card-title">Database</h5>
-                <p class="card-text">
-                  Database that I often implemented such as mySQL and monggodb.
-                  Database use to store devices data or storing parameter to
-                  visualize in website or for data for building machine learning
-                </p>
-              </div>
+              <p class="text-muted mb-3">Dicoding DBS</p>
+              <ul>
+                <li>Designed and delivered ML modules using PyTorch/TensorFlow for national coding camp participants.</li>
+                <li>Supervised applied capstone projects with emphasis on experimentation and error analysis.</li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="row project" id="project">
-        <h3>My Projects</h3>
-
-        <div class="row">
-          <div class="col">
-            <div class="card">
-              <img src="./images/project1.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Vehicle Control System Based On Computer Vision And Iot As A
-                  Security Solution In Sharp Turns
-                </h5>
-                <p class="card-text">
-                  This project used to prevent accident in sharp turn.
-                  Especially in Indonesian which has many sharp bend due to
-                  geographic condition
-                </p>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modal1"
-                >
-                  Read More
-                </button>
-              </div>
-            </div>
-            <div
-              class="modal fade"
-              id="modal1"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">
-                      Vehicle Control System
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="container">
-                      <div class="row">
-                        <div
-                          class="videos d-flex justify-content-center align-items-center"
-                        >
-                          <div>
-                            <h3>Video Demo</h3>
-                            <video width="800" controls autoplay>
-                              <source
-                                src="./videos/vid1.mp4"
-                                type="video/mp4"
-                              />
-                              Your browser does not support HTML video.
-                            </video>
-                          </div>
-                        </div>
-                      </div>
-
-                      <h3>Step Included :</h3>
-
-                      <ul>
-                        <li>
-                          1. Collecting Dataset of heavy and small vehicle
-                        </li>
-                        <li>
-                          2. Developing model YOLOV4 to perform classification
-                        </li>
-                        <li>3. Training model YOLOV8</li>
-                        <li>4. Deploy model to Jetson Nano</li>
-                        <li>5. Analysis performance of the system</li>
-                        <li>6. Evaluate the system</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
+      <section class="projects-section py-5" id="projects">
+        <div class="container">
+          <h2 class="section-title text-center mb-5">Selected Projects</h2>
+          
+          <div class="row g-4">
+            <!-- Project 1 -->
+            <div class="col-lg-6">
+              <div class="project-card glass-card h-100 overflow-hidden">
+                <div class="project-img-wrapper">
+                   <img src="./images/project1.jpg" class="img-fluid w-100" alt="BEVFusion" onerror="this.src='./images/lab-foto-modified.png'" />
+                </div>
+                <div class="p-4">
+                  <h4 class="text-white">BEVFusion on CARLA-Generated Data</h4>
+                  <p class="text-gray mt-2">Generated synchronized LiDAR and camera samples in CARLA to simulate nuScenes-style autonomous driving scenarios. Trained BEVFusion for multimodal 3D object detection and built a lightweight web dashboard for real-time inference visualization.</p>
+                  <div class="mt-3">
+                    <span class="badge bg-dark border border-secondary text-light me-1">Multimodal Fusion</span>
+                    <span class="badge bg-dark border border-secondary text-light me-1">LiDAR</span>
+                    <span class="badge bg-dark border border-secondary text-light">PyTorch</span>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="./images/project2.jpeg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  ​​Detecting healthy, sick and dead chickens in broiler coops
-                  based on computer vision and IoT to prevent the spread of
-                  disease and death in broiler chickens
-                </h5>
-                <p class="card-text">
-                  This project designed to monitor and collect data of number
-                  chicken death, sick, and health in broiler chicken farm.
-                </p>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modal2"
-                >
-                  Read More
-                </button>
-              </div>
-            </div>
-            <div
-              class="modal fade"
-              id="modal2"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">
-                      Chicken Monitoring System
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="container">
-                      <div class="row">
-                        <div
-                          class="videos d-flex justify-content-center align-items-center"
-                        >
-                          <div>
-                            <h3>Video Demo</h3>
-                            <video width="800" controls autoplay muted>
-                              <source
-                                src="./videos/vid2.mp4"
-                                type="video/mp4"
-                              />
-                              Your browser does not support HTML video.
-                            </video>
-                          </div>
-                        </div>
-                      </div>
 
-                      <h3>Step Included :</h3>
-
-                      <ul>
-                        <li>
-                          1. Collecting Dataset of healthy, sick and death
-                          chicken
-                        </li>
-                        <li>
-                          2. Developing model YOLOV4 to perform classification
-                        </li>
-                        <li>3. Training model YOLOV4</li>
-                        <li>4. Deploy model to raspberry pi and AWS Cloud</li>
-                        <li>5. Analysis performance of the system</li>
-                        <li>6. Evaluate the system</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
+            <!-- Project 2 -->
+            <div class="col-lg-6">
+              <div class="project-card glass-card h-100 overflow-hidden">
+                <div class="project-img-wrapper">
+                   <img src="./images/project2.jpeg" class="img-fluid w-100" alt="Chicken Monitoring System" />
+                </div>
+                <div class="p-4">
+                  <h4 class="text-white">Chicken Monitoring System (IoT + CV)</h4>
+                  <p class="text-gray mt-2">Developed a YOLOv4 based pipeline to classify broiler chickens as healthy, sick, or dead. Delivered a full end-to-end system from on-site edge inference to a real-time web dashboard. <strong>Awarded Gold Medal at 2023 IYSA International IoT competition.</strong></p>
+                  <div class="mt-3">
+                    <span class="badge bg-dark border border-secondary text-light me-1">YOLOv4</span>
+                    <span class="badge bg-dark border border-secondary text-light me-1">Edge Computing</span>
+                    <span class="badge bg-dark border border-secondary text-light">IoT</span>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col">
-            <div class="card">
-              <img
-                src="./images//smartclassroom.PNG"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">
-                  Collecting data from sensor, sending through API, save data to
-                  database, setting actuator in class, visualize data
-                </h5>
-                <p class="card-text">
-                  Smart classroom system is a collection of devices on the
-                  classroom that capture the data on the classroom such as
-                  temperature, humidity, wind speed, number of people and
-                  others. The data will be visualize and can be downloaded for
-                  future research
-                </p>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modal3"
-                >
-                  Read More
-                </button>
-              </div>
-            </div>
-            <div
-              class="modal fade"
-              id="modal3"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">
-                      Smart Classroom System
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="container">
-                      <div class="row">
-                        <div
-                          class="videos d-flex justify-content-center align-items-center"
-                        >
-                          <div>
-                            <h3>Screenshoot</h3>
-                            <img src="./images/smartclassroom.PNG" />
-                          </div>
-                        </div>
-                      </div>
-
-                      <h3>Steps Included :</h3>
-                      <ul>
-                        <li>
-                          1. Building IoT devices (Sensors, microcontrollers,
-                          actuators)
-                        </li>
-                        <li>
-                          2. Building API and Database (Using NoSQL database
-                          monggodb and using express.js)
-                        </li>
-                        <li>3. Building website front end (using react.js)</li>
-                        <li class="mt-5">Resouces :</li>
-                        <li>
-                          <a href=" https://smartclassroomweb.vercel.app">
-                            Website
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://classroom-api.vercel.app"> API </a>
-                        </li>
-                        <li>
-                          Github :
-                          <a
-                            href="https://github.com/fadhilelrizanda/classroom_API"
-                          >
-                            API
-                          </a>
-                          <a
-                            href="https://github.com/fadhilelrizanda/smartclassroomweb"
-                          >
-                            Front End
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
+            <!-- Project 3 -->
+            <div class="col-lg-6">
+              <div class="project-card glass-card h-100 overflow-hidden">
+                <div class="project-img-wrapper d-flex align-items-center justify-content-center bg-dark" style="height: 250px;">
+                   <i class="bi bi-water text-primary" style="font-size: 5rem;"></i>
+                </div>
+                <div class="p-4">
+                  <h4 class="text-white">Fish Counting System via Density Estimation</h4>
+                  <p class="text-gray mt-2">Designed an end-to-end aquaculture monitoring pipeline using regression-based deep learning for density map inference. Built the full stack from image acquisition to model deployment for a real-world client application.</p>
+                  <div class="mt-3">
+                    <span class="badge bg-dark border border-secondary text-light me-1">Density Estimation</span>
+                    <span class="badge bg-dark border border-secondary text-light me-1">Regression Models</span>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- Project 4 -->
+            <div class="col-lg-6">
+              <div class="project-card glass-card h-100 overflow-hidden">
+                <div class="project-img-wrapper d-flex align-items-center justify-content-center bg-dark" style="height: 250px;">
+                   <i class="bi bi-diagram-3 text-info" style="font-size: 5rem;"></i>
+                </div>
+                <div class="p-4">
+                  <h4 class="text-white">Graph-RAG Chatbot for Drug Repositioning</h4>
+                  <p class="text-gray mt-2">Built a biomedical QA system combining LLMs with a Neo4j knowledge graph for semantic drug-disease reasoning. Integrated PubMed embeddings and vector search to enable Cypher-based retrieval over structured biomedical relationships.</p>
+                  <div class="mt-3">
+                    <span class="badge bg-dark border border-secondary text-light me-1">LLMs</span>
+                    <span class="badge bg-dark border border-secondary text-light me-1">Graph-RAG</span>
+                    <span class="badge bg-dark border border-secondary text-light">Neo4j</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
-      </div>
-      <!-- experience -->
-      <div class="row experience box-view" id="experience">
-        <h3>Experience</h3>
-        <section style="background-color: #f0f2f5">
-          <div class="container py-5">
-            <div class="main-timeline">
-              <div class="timeline left">
-                <div class="card">
-                  <div class="card-body p-4 tm-img">
-                    <img src="./images/datasintesa.png" class="img-fluid" />
-                    <h3>Data Scientist Internship</h3>
+      </section>
 
-                    <ul>
-                      <li>
-                        Designing and building a workout repetition system using
-                        Blazepose and Openpose.
-                      </li>
-                      <li>
-                        The workout repetitions calculated include sit-ups,
-                        pull-ups, and push-ups.
-                      </li>
-                      <li>
-                        Data collection is conducted by gathering information
-                        from the internet, resulting in a total of 367 images.
-                      </li>
-                      <li>
-                        A model is obtained that accurately calculates
-                        repetitions based on benchmark movements. However, there
-                        are unique cases that lead to inaccurate calculations
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="timeline right">
-                <div class="card">
-                  <div class="card-body p-4 tm-img">
-                    <img
-                      src="./images/Logo_Semen_Padang.svg"
-                      class="img-fluid"
-                      style="width: 150px"
-                    />
-                    <h3>
-                      Electrical and instrumentation maintenance internship
-                    </h3>
-
-                    <ul>
-                      <li>
-                        Gathering information and data regarding issues in the
-                        cement manufacturing process.
-                      </li>
-                      <li>
-                        Designing and creating an artificial neural network
-                        model to predict the smoothness value of cement.
-                      </li>
-                      <li>
-                        Evaluating the obtained model together with staff from
-                        PT Semen Padang and mentors from Andalas University.
-                      </li>
-                      <li>
-                        Obtained mean absolute error (MAE) and mean squared
-                        error (MSE) of 0.89 and 0.75, respectively, on the test
-                        data.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="timeline left">
-                <div class="card">
-                  <div class="card-body p-4 tm-img">
-                    <img src="./images/progate.jpeg" class="img-fluid" />
-                    <h3>Progate Instructor (Part Time)</h3>
-
-                    <ul>
-                      <li>
-                        Instructor Program Ready Set Code Progate (Front End)
-                      </li>
-                      <li>
-                        Instructor Digital Talent Scholarship Online Academy
-                        Progate
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="timeline right">
-                <div class="card">
-                  <div class="card-body p-4 tm-img">
-                    <img
-                      src="./images/dicoding.jpeg"
-                      class="img-fluid"
-                      style="width: 150px"
-                    />
-                    <h3>Facilitator (Part Time)</h3>
-
-                    <ul>
-                      <li>
-                        Facilitator IBM New Collar & Skills Accelerator Center
-                        Batch 2
-                      </li>
-                      <li>
-                        Facilitator Indonesian New Collar and Skill Accelerator
-                        Center Dicoding
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div class="row contact" id="contact">
-        <h3>Contact Me</h3>
-        <div class="row">
-          <div class="col d-flex flex-column align-items-center">
-            <a href="https://www.linkedin.com/in/fadhil-elrizanda/">
-              <i class="bi bi-linkedin"></i>
+      <section class="contact-section py-5" id="contact">
+        <div class="container text-center">
+          <h2 class="section-title mb-5">Let's Connect</h2>
+          <p class="lead text-gray mb-5 max-w-700 mx-auto">Whether you have a question, a project proposal, or just want to say hi, feel free to reach out. I'm always open to discussing new opportunities in AI and Computer Vision.</p>
+          
+          <div class="d-flex justify-content-center gap-4 flex-wrap">
+            <a href="mailto:fadhilelrizanda@gmail.com" class="social-link glass-card p-4 text-decoration-none">
+              <i class="bi bi-envelope-at-fill d-block mb-2 text-primary" style="font-size: 2.5rem;"></i>
+              <span class="text-white">Email Me</span>
             </a>
-            <p>Fadhil Elrizanda</p>
-          </div>
-          <div class="col d-flex flex-column align-items-center">
-            <a href="mailto:fadhilelrizanda@gmail.com">
-              <i class="bi bi-envelope"></i>
+            <a href="https://www.linkedin.com/in/fadhil-elrizanda" target="_blank" rel="noopener noreferrer" class="social-link glass-card p-4 text-decoration-none">
+              <i class="bi bi-linkedin d-block mb-2 text-info" style="font-size: 2.5rem;"></i>
+              <span class="text-white">LinkedIn</span>
             </a>
-            <p>fadhilelrizanda@gmail.com</p>
-          </div>
-          <div class="col d-flex flex-column align-items-center">
-            <a href="github.com/fadhilelrizanda">
-              <i class="bi bi-github"></i>
+            <a href="https://github.com/fadhilelrizanda" target="_blank" rel="noopener noreferrer" class="social-link glass-card p-4 text-decoration-none">
+              <i class="bi bi-github d-block mb-2 text-white" style="font-size: 2.5rem;"></i>
+              <span class="text-white">GitHub</span>
             </a>
-            <p>fadhilelrizanda</p>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
-    <footer class="row mt-5 footer">
-      <div class="col d-flex flex-column align-items-end">
-        <p>&copy; 2024 Fadhil Elrizanda. All rights reserved.</p>
+    <footer class="py-4 text-center border-top border-secondary footer-bg">
+      <div class="container">
+        <p class="mb-0 text-muted">&copy; 2026 Fadhil Elrizanda. All rights reserved.</p>
       </div>
     </footer>
   </body>
