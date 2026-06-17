@@ -1,48 +1,49 @@
-# Fadhil Elrizanda - Profile
+# Fadhil Elrizanda - Academic & Professional Profile
 
-**Location:** Bandung, Indonesia
-**Contact:** fadhilelrizanda@gmail.com | +6282389164106 | [GitHub](https://github.com/fadhilelrizanda) | [LinkedIn](https://www.linkedin.com/in/fadhil-elrizanda) | Medium: @fadhilelrizanda
+**Location:** Bandung, West Java, Indonesia
+**Contact:** fadhilelrizanda@gmail.com | +6282389164106 | [LinkedIn](https://www.linkedin.com/in/fadhilelrizanda) | [GitHub](https://github.com/fadhilelrizanda) | Medium: @fadhilelrizanda
 
-## Summary
-AI researcher and engineer specializing in Computer Vision and Deep Learning, with hands-on expertise in CNNs, Transformers, and multimodal fusion for real-world perception systems. Currently pursuing a Master's at ITB focused on Knowledge Distillation for 3D Object Detection (LiDAR+camera). Proven track record in applied AI across autonomous driving, aquaculture monitoring, and biomedical systems. Active instructor and advisor in national ML education programs.
+## Academic Summary
+I am a Graduate Researcher in Informatics at Institut Teknologi Bandung (ITB), specializing in Artificial Intelligence and Computer Vision. My current research focuses on Knowledge Distillation for 3D Object Detection, aiming to bridge the gap between high-performance complex models and real-time deployment on resource-constrained edge devices. I possess a strong foundational and practical expertise in Convolutional Neural Networks (CNNs), Vision Transformers, and multimodal perception fusion strategies.
 
 ## Education
-*   **M.Eng. in Informatics: Artificial Intelligence**
+*   **Master of Engineering (M.Eng.) in Informatics: Artificial Intelligence**
     *   Institut Teknologi Bandung (Expected Aug 2026)
-    *   *Thesis: Optimizing multimodal 3D object detection using camera and LiDAR with knowledge distillation.*
-*   **B.Eng. in Electrical Engineering**
+    *   *Research Focus:* Optimizing multimodal 3D object detection using camera and LiDAR modalities via advanced knowledge distillation methodologies.
+*   **Bachelor of Engineering (B.Eng.) in Electrical Engineering**
     *   Universitas Andalas, Padang (Dec 2023)
-    *   *Thesis: Vision-based vehicle safety system using YOLOv5 for real-time detection.*
+    *   *Thesis:* Vision-based vehicle safety system using YOLOv5 for real-time detection and risk mitigation in complex environments.
 
-## Experience
-*   **Computer Vision Engineer (Freelancer)** (Jan 2026 - Present)
-    *   Building fish counting system based on density estimation and regression-based deep learning models. End-to-end pipeline design.
-*   **Computer Vision Engineer (Part Time) | Autonoma** (Dec 2025 - Present)
-    *   Designing algorithms for Object Detection on Autonomous Vehicles. Developing perception pipelines integrating camera and sensor data.
-*   **Capstone Project Advisor (AI/ML) | Dicoding Asah** (Oct 2025 - Dec 2025)
-    *   Guided teams on ML system design, dataset curation, modeling, and deployment.
-*   **ML Instructor & Project Advisor | Dicoding DBS** (Dec 2024 - Aug 2025)
-    *   Designed/delivered ML modules using PyTorch/TensorFlow. Supervised applied capstone projects.
+## Professional & Research Experience
+*   **AI Engineer | Riset AI** (May 2026 - Present)
+    *   Conducting advanced AI research and developing engineering solutions.
+*   **Computer Vision Engineer | Autonoma** (Dec 2025 - Present)
+    *   Designing sophisticated object detection algorithms for autonomous vehicle systems. Developing robust perception pipelines integrating multimodal sensor data (camera and LiDAR).
+*   **Capstone Project Advisor | Coding Camp powered by DBS Foundation** (April 2026 - Present)
+    *   Advising and guiding teams through end-to-end machine learning system design, dataset curation, modeling, and best practices for deployment.
+*   **Machine Learning Instructor & Project Advisor | Dicoding DBS** (Dec 2024 - Aug 2025)
+    *   Designed and instructed comprehensive ML modules utilizing PyTorch and TensorFlow for national coding camp participants.
+*   **Data Scientist Intern | PT Datasintesa Teknologi Nusantara** (April 2021 - June 2021)
+    *   Developed human pose estimation and workout classification pipelines (push-up, pull-up, sit-up) leveraging BlazePose.
 
-## Selected Projects
-*   **BEVFusion on CARLA-Generated nuScenes-Style Data:** Multimodal 3D object detection using generated LiDAR and camera samples in CARLA. Lightweight web dashboard for inference.
-*   **Fish Counting System via Density Estimation:** End-to-end aquaculture monitoring pipeline using regression-based deep learning.
-*   **Graph-RAG Chatbot for Drug Repositioning:** Biomedical QA system combining LLMs with a Neo4j knowledge graph.
-*   **Chicken Monitoring System Computer Vision + IoT:** YOLOv4 based pipeline to classify broiler chickens (healthy, sick, dead). Gold Medal at 2023 IYSA International IoT competition.
+## Selected Research Projects & Implementations
+*   **BEVFusion on CARLA-Generated Data:** Implemented multimodal 3D object detection architectures using synchronized LiDAR and camera data generated in CARLA, simulating nuScenes-style autonomous driving environments.
+*   **Aquaculture Density Estimation:** Architected an end-to-end monitoring pipeline utilizing regression-based deep learning for spatial density map inference in aquaculture contexts.
+*   **Graph-RAG Biomedical Chatbot:** Developed an advanced QA system integrating Large Language Models (LLMs) with a Neo4j knowledge graph for semantic reasoning in drug repositioning.
+*   **IoT & CV-based Poultry Monitoring System:** Engineered a YOLOv4-based edge-computing pipeline for real-time classification of broiler health metrics, culminating in a Gold Medal at the 2023 IYSA International IoT competition.
 
-## Skills
-*   **Languages:** Python, C++
-*   **Frameworks & Libraries:** PyTorch, TensorFlow, TensorRT, OpenCV, ONNX
-*   **Tools & Platforms:** Docker, Git, Weights & Biases, CARLA
-*   **Specializations:** Computer Vision, Deep Learning, Multimodal Fusion, Object Detection, Knowledge Distillation
+## Technical Proficiencies
+*   **Core Competencies:** Artificial Intelligence (AI), Natural Language Processing (NLP), Computer Vision, Deep Learning, Multimodal Fusion, Knowledge Distillation.
+*   **Programming & Frameworks:** Python, C++, PyTorch, TensorFlow, TensorRT, OpenCV, ONNX.
+*   **Tools & Infrastructure:** Docker, Git, Weights & Biases, Robot Operating System (ROS), CARLA.
 
-## Awards
+## Selected Honors & Awards
 *   Gold Medal & Special Award, International IoT — IYSA (2023)
 *   Silver Medal, Global Competition for Life Science — IYSA (2023)
-*   Silver Medal, GEMASTIK Division IX Smart Device (2023)
-*   Sakura Science Exchange Program — JST (2023)
-*   Outstanding Graduate & Campus Activist — Andalas University (2023)
+*   Winner 2nd Place, Division IX GEMASTIK XV (2022)
+*   Sakura Science Exchange Program Participant — JST, Japan (2023)
+*   Outstanding Graduate — Andalas University (2023)
 
 ## Intellectual Property
-*   Soil Classification App — Copyright No. EC002024229115 (2024)
+*   Soil Classification Application — Copyright No. EC002024229115 (2024)
 *   Soil Classification using ANN — Copyright Application No. EC002025034855 (2025)
