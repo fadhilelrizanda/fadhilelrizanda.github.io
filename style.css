@@ -30,8 +30,8 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   font-family: var(--font-heading);
 }
 
-.text-gray {
-  color: var(--text-muted);
+.text-gray, .text-muted {
+  color: var(--text-muted) !important;
 }
 
 /* Gradients & Accents */
