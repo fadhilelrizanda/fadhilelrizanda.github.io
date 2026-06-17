@@ -2,10 +2,10 @@
 :root {
   --primary-color: #00f2fe; /* Cyber Cyan */
   --secondary-color: #8a2be2; /* Deep Purple */
-  --bg-dark: #07070b; /* Deepest Midnight */
-  --bg-darker: #030305;
-  --text-main: #f0f4f8;
-  --text-muted: #9aa5b1;
+  --bg-dark: #1e293b; /* Slate 800 */
+  --bg-darker: #0f172a; /* Slate 900 */
+  --text-main: #f8fafc; /* Slate 50 */
+  --text-muted: #94a3b8; /* Slate 400 */
   --glass-bg: rgba(20, 20, 30, 0.4);
   --glass-border: rgba(138, 43, 226, 0.15);
   --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 .hero {
   height: 100vh;
   position: relative;
-  background: radial-gradient(circle at center, #120e1f 0%, var(--bg-dark) 100%);
+  background: radial-gradient(circle at center, var(--bg-dark) 0%, var(--bg-darker) 100%);
   overflow: hidden;
 }
 
