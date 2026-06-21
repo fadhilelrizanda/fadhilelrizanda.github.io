@@ -1,321 +1,575 @@
-.prime_color {
-  background-color: #124076;
+:root {
+  --bg-base:        #080810;
+  --bg-surface:     #0f0f1a;
+  --bg-raised:      #16162a;
+  --text-primary:   #f0eee8;
+  --text-secondary: #8a8a9a;
+  --text-muted:     #52526a;
+  --accent:         #8b5cf6;
+  --accent-dim:     rgba(139, 92, 246, 0.12);
+  --accent-border:  rgba(139, 92, 246, 0.25);
+  --signal:         #34d399;
+  --border:         rgba(255, 255, 255, 0.07);
+  --border-strong:  rgba(255, 255, 255, 0.14);
+  --font-body:      'DM Sans', system-ui, sans-serif;
+  --font-display:   'DM Serif Display', Georgia, serif;
+  --transition:     all 0.15s ease;
 }
 
-.nav_prime {
-  background-color: #124076;
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  line-height: 1.7;
+  font-optical-sizing: auto;
 }
 
-.nav_prime a {
-  color: white;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
 }
 
-.profile-photo {
-  margin-top: 60px;
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-raised);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
 }
 
-.desc-profile {
-  color: white;
-  text-align: center;
-  font-size: 20px;
+/* Navigation */
+.navbar {
+  background: rgba(8, 8, 16, 0.92) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
 }
 
-.box-view {
-  border: 5px solid black;
+.navbar-brand {
+  font-family: var(--font-display);
+  color: var(--text-primary) !important;
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: -0.01em;
 }
 
-.name p {
-  color: white;
-  text-align: center;
-  font-size: 32px;
-  margin-top: 0; /* Add this line to remove top margin */
-  margin-bottom: 10px; /* Adjust bottom margin as needed */
+.nav-link {
+  color: var(--text-secondary) !important;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  padding: 0.375rem 0.75rem !important;
+  transition: color 0.15s ease;
+  position: relative;
 }
 
-.desc-profile p {
-  color: white;
-  font-size: 24px;
+.nav-link:hover {
+  color: var(--text-primary) !important;
 }
 
-.desc p {
-  color: white;
-  text-align: center;
-  font-size: 22px;
+/* Hero Section */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+  background-color: var(--bg-base);
+  background-image:
+    linear-gradient(rgba(139, 92, 246, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139, 92, 246, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  background: linear-gradient(to bottom, transparent, var(--bg-base));
+  pointer-events: none;
 }
 
 .circular--portrait {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 250px;
-  height: 250px;
-  overflow: hidden;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
-  margin: 0 auto;
+  overflow: hidden;
+  border: 2px solid var(--border-strong);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  margin: 0 auto 2rem auto;
 }
 
 .circular--portrait img {
   width: 100%;
-  height: auto;
-  margin-top: 70px;
-}
-
-.hero {
-  position: relative;
-  height: 600px;
-  overflow: hidden; /* Ensure the blur effect is contained within the hero element */
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
-  background-image: url("./bg-hero1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: blur(3px); /* Apply blur effect to the background image */
-  z-index: -1; /* Ensure the pseudo-element is behind the content */
+  object-fit: cover;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.hero-name {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4.25rem);
+  color: var(--text-primary);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.1;
+}
+
+.tagline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin-top: 1.25rem;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.desc-profile {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0.75rem;
+}
+
+/* Sections */
+section {
+  padding: 5rem 0;
+}
+
+#about         { background: var(--bg-base); }
+#experience    { background: var(--bg-surface); }
+#projects      { background: var(--bg-base); }
+#skills        { background: var(--bg-surface); }
+#certifications { background: var(--bg-base); }
+#contact       { background: var(--bg-surface); }
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--text-primary);
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.section-title.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-title span {
+  color: var(--accent);
+}
+
+/* About */
+.about-card {
+  background: var(--bg-surface);
+  border-radius: 12px;
+  padding: 2.5rem;
+  border-left: 3px solid var(--accent);
+}
+
+.about-text {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-img {
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--border);
   width: 100%;
-  height: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.75
-  ); /* Adjust the alpha value to control darkness */
-  z-index: -1; /* Ensure the pseudo-element is behind the content */
 }
 
-.desc-content {
-  color: black;
+.achievement-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
 }
 
-.desc-content h3 {
-  margin-top: 45px;
-  margin-bottom: 20px;
-}
-
-.desc-content h4 {
-  font-size: 20px;
-}
-
-.desc-content p {
-  color: black;
-  text-align: justify;
-  font-size: 18px;
-}
-
-.skills {
-  margin-top: 25px;
-  background-color: rgb(7, 9, 17);
-  color: white;
-  padding-bottom: 175px;
-}
-
-.skills h3 {
-  margin-bottom: 50px;
-  font-size: 28px;
-  text-align: center;
-}
-
-.card i {
-  text-align: center;
-  font-size: 100px;
-}
-
-.project {
-  padding: 50px 0px;
-}
-
-.project h3 {
-  text-align: center;
-  padding: 35px 0px;
-}
-
-.img-desc img {
-  height: 100px;
-}
-
-.img-desc-prof img {
-  width: 300px;
-}
-
-/* The actual timeline (the vertical ruler) */
-.main-timeline {
+.achievement-list li {
   position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
 }
 
-/* The actual timeline (the vertical ruler) */
-.main-timeline::after {
-  content: "";
+.achievement-list li::before {
+  content: '▸';
   position: absolute;
-  width: 6px;
-  background-color: #939597;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
+  left: 0;
+  color: var(--accent);
 }
 
-/* Container around content */
+/* Experience Timeline */
 .timeline {
   position: relative;
-  background-color: inherit;
-  width: 50%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  border-left: 1px solid var(--border-strong);
 }
 
-/* The circles on the timeline */
-.timeline::after {
-  content: "";
+.timeline-item {
+  position: relative;
+  padding: 0 0 2.5rem 1.75rem;
+}
+
+.timeline-item::before {
+  content: '';
   position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -13px;
-  background-color: #939597;
-  border: 5px solid #f5df4d;
-  top: 15px;
+  left: -4.5px;
+  top: 6px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
-  z-index: 1;
+  background: var(--bg-surface);
+  border: 2px solid var(--accent);
 }
 
-/* Place the container to the left */
-.left {
-  padding: 0px 40px 20px 0px;
-  left: 0;
+.timeline-content {
+  background: transparent;
+  padding: 0;
 }
 
-/* Place the container to the right */
-.right {
-  padding: 0px 0px 20px 40px;
-  left: 50%;
+.timeline-date {
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--signal);
+  display: block;
+  margin-bottom: 0.375rem;
 }
 
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  position: absolute;
-  top: 18px;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+.timeline-title {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.125rem;
 }
 
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  position: absolute;
-  top: 18px;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+.timeline-company {
+  font-family: var(--font-body);
+  color: var(--accent);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
 }
 
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -12px;
+.timeline-content ul {
+  padding-left: 1.25rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  margin: 0;
 }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .main-timeline::after {
-    left: 31px;
-  }
-
-  /* Full-width containers */
-  .timeline {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-
-  /* Make sure that all arrows are pointing leftwards */
-  .timeline::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-
-  /* Make sure all circles are at the same spot */
-  .left::after,
-  .right::after {
-    left: 18px;
-  }
-
-  .left::before {
-    right: auto;
-  }
-
-  /* Make all right containers behave like the left ones */
-  .right {
-    left: 0%;
-  }
+/* Projects */
+.project-card {
+  border: none;
+  background: transparent;
+  height: 100%;
 }
 
-.tm-img img {
-  width: 200px;
+.project-card-inner {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
-.timeline h3 {
-  font-size: 20px;
+.project-card-inner:hover {
+  border-color: var(--border-strong);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
 }
 
-.experience {
+.project-img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+  border-bottom: 1px solid var(--border);
+  display: block;
+}
+
+.project-body {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 0.875rem;
+}
+
+.badge-tag {
+  background: transparent;
+  color: var(--text-muted);
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--border-strong);
+}
+
+.project-title {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.625rem;
+}
+
+.project-desc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+  line-height: 1.6;
+}
+
+.btn-custom {
+  background: var(--accent-dim);
+  border: 1px solid var(--accent-border);
+  color: var(--accent);
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+  display: inline-block;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: rgb(7, 9, 17);
-  color: white;
 }
 
-.timeline li {
-  text-align: start;
+.btn-custom:hover {
+  background: rgba(139, 92, 246, 0.2);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
-.experience section {
-  background-color: rgb(7, 9, 17) !important;
+/* Skills */
+.skill-group {
+  background: var(--bg-raised);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  height: 100%;
+  overflow: hidden;
 }
 
-.contact h3 {
-  padding: 50px;
+.skill-group-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.skill-group-header i {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.skill-group-label {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.skill-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.625rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.skill-row:last-child {
+  border-bottom: none;
+}
+
+.skill-row-name {
+  font-weight: 500;
+  color: var(--text-primary);
+  font-size: 0.875rem;
+}
+
+.skill-dots {
+  display: flex;
+  gap: 3px;
+}
+
+.skill-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: inline-block;
+}
+
+.skill-dot.dim {
+  background: var(--border-strong);
+}
+
+/* Contact */
+.contact-list {
+  max-width: 480px;
+  margin: 0 auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--bg-raised);
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--text-secondary);
+  transition: color 0.15s ease, background 0.15s ease;
+  gap: 1rem;
+}
+
+.contact-row:last-child {
+  border-bottom: none;
+}
+
+.contact-row:hover {
+  color: var(--text-primary);
+  background: var(--accent-dim);
+}
+
+.contact-row i {
+  font-size: 1rem;
+  color: var(--text-muted);
+  width: 1.25rem;
   text-align: center;
+  flex-shrink: 0;
+  transition: color 0.15s ease;
 }
 
-.contact .col i {
-  font-size: 75px;
-  text-align: center;
+.contact-row:hover i {
+  color: var(--accent);
 }
 
-.contact .col p {
-  text-align: center;
+.contact-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.contact-detail {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-left: auto;
+}
+
+/* Modals */
+.modal-content {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  color: var(--text-primary);
+  border-radius: 12px;
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-footer {
+  border-top: 1px solid var(--border);
+}
+
+.modal-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
 }
 
 .videos video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background: var(--bg-base);
+  padding: 2rem 0;
   text-align: center;
-  margin: auto;
+  border-top: 1px solid var(--border);
 }
 
-.modal-body ul {
-  list-style-type: none; /* Menghapus bullet points */
-  padding-left: 0; /* Menghapus padding default dari ul */
+footer p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
 }
 
-.modal-body ul li {
-  text-decoration: none; /* Menghapus underline (meskipun ini jarang diterapkan pada li) */
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .hero-name {
+    font-size: 2.5rem;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-item {
+    padding-left: 1.5rem;
+  }
+
+  section {
+    padding: 3.5rem 0;
+  }
 }
