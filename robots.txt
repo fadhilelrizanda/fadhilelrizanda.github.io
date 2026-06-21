@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /favicon_io.zip
 
-Sitemap: https://fadhilelrizanda.github.io/sitemap.xml
+Sitemap: https://fadhilelrizanda.me/sitemap.xml
